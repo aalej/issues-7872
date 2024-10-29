@@ -11,8 +11,8 @@ node: v18.19.1
    - Run `cd functions`
    - Run `npm i`
    - Run `cd ../`
-2. Run `firebase emulators:start demo-project`
-3. Run the curl command below to create a user
+2. Run `firebase emulators:start --project demo-project`
+3. In a new terminal, run the curl command below to create a user
 
 ```
 curl 'http://127.0.0.1:9099/identitytoolkit.googleapis.com/v1/projects/demo-project/accounts' \
@@ -54,5 +54,5 @@ curl 'http://127.0.0.1:9099/identitytoolkit.googleapis.com/v1/projects/demo-proj
 >  }
 ```
 
-5. Open `http://localhost:4000/firestore/default/data`, it should show a document related to the user
+5. Open "http://localhost:4000/firestore/default/data", it should show a document related to the user
    - <img src="./images/firestore-img.png"/>
